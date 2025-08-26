@@ -1,50 +1,31 @@
-# Maluku-Island
+# Monitoring Control Website
 
-Welcome to **Maluku-Island**!  
-A website about Maluku Island.
+Welcome to **Monitoring Control Website**!  
+A web platform for monitoring and controlling electric devices using IoT technologies.
 
 ## 📝 About
-This project showcases information and culture about Maluku Island.
+This project is designed to provide real-time monitoring and control of electrical devices, such as lamps and other electronics, via a web interface.  
+It leverages the MQTT protocol for efficient communication between the website and connected devices.
 
 ## 💻 Tech Stack
-- **Primary Language:** HTML
+- **Primary Language:** (please specify: PHP, JavaScript, Node.js, etc.)
+- **MQTT** for real-time messaging
+- **IoT device support**
 
-## 🌐 Project Links
-- [Repository on GitHub](https://github.com/RendyPakeY/Maluku-Island)
+## 🌐 Features
+- **Electric Device Monitoring:** Track the status and power usage of connected devices.
+- **Lamp State Control:** Remotely switch lamps and other electronics on or off.
+- **Real-Time Updates:** Uses MQTT for instant status changes and device feedback.
+- **Web-Based Interface:** Control and monitor devices from anywhere.
 
-## 🚀 Features
-- Informative website about Maluku Island
-- Easy navigation
-- Cultural and travel highlights
+## 🚀 Use Cases
+- Smart home automation
+- Office energy monitoring
+- Remote control for industrial electronics
 
 ## 🤝 Contributing
-Feel free to fork the repository and submit pull requests. Issues and suggestions are welcome!
+Fork the repository and submit pull requests. Issues and suggestions are welcome!
 
 ---
 
-> website maluku island
-
----
-
-# Monitoring & Control (IoT) Features
-
-This website integrates IoT-based monitoring and control for electrical devices:
-
-## 📡 MQTT Integration
-- Real-time communication using MQTT protocol
-
-## ⚡ Monitoring Electric Devices
-- Track power usage and status of connected electronics
-
-## 💡 Lamp State & Electronic Device Control
-- Remotely monitor and control the state of lamps
-- Switch electronic devices on/off via web interface
-
-## 🛠 Example Use Cases
-- Smart home control panel
-- Remote electric device monitoring
-- Automated lamp and device scheduling
-
----
-
-For questions or contributions regarding IoT features, please open an issue or pull request!
+> Monitoring & control website for electric devices, integrating MQTT and IoT technologies.
