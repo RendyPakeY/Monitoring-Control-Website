@@ -1,0 +1,213 @@
+main .content{
+    width: 63% !important;
+}
+main .content .form .form-value{
+    background-color: white;
+    height: 80%;
+    width: 100%;
+    
+}
+main .content .form .form-value .form-top{
+    background-color: var(--light-green);
+    color: white;
+    padding: 25px 35px;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+main .content .form .form-value form{
+    display: flex;
+    padding: 25px 35px;
+    flex-direction: column;
+    align-items: end;
+    box-shadow: -1px 1px 39px -7px rgba(0,0,0,0.51);  
+}
+.content .form .form-value form .form-value{
+    display: flex;
+    width: 100%;
+    gap: 80px;
+}
+.content .form .form-value form .form-value .kinan{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.content .form .form-value form .form-value .kinan input{
+    height: 30px;
+    margin-bottom: 20px;
+}
+.content .form .form-value form .form-value .kinan label{
+    margin-bottom: 5px;
+}
+.content .form .form-value form .form-value .kinan select{
+    height: 34px;
+    margin-bottom: 20px;
+}
+.content .form .form-value form .bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.content .form .form-value form .bottom p{
+    display: flex;
+    gap: 7px;
+    color: var(--green);
+    align-items: center;
+}
+
+.button-green{
+    border: solid var(--light-green) 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--light-green);
+    margin-top: 20px;
+    height: 40px;
+    width: 250px;
+    color: white;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+.button-green:hover{
+    color: var(--light-green);
+    background-color: white;
+}
+.button-red{
+    border: solid #df3636 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #df3636;
+    margin-top: 20px;
+    height: 40px;
+    width: 250px;
+    color: white;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+.button-red:hover{
+    color: #df3636;
+    background-color: white;
+}
+
+
+.side-content{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    padding: 20px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}  
+.side-content .img{
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+}
+.side-content .img img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+.side-content .img form{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7));
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 4rem;
+    transition: .5s ease-in-out;
+    border-radius: 50%;
+}
+.side-content .img form:hover{
+    opacity: 100%;
+    border-radius: 40%;
+}
+
+.side-content .img form label{
+    cursor: pointer;
+    padding: 50%;
+}
+
+@media screen and (max-width : 600px) {
+    main{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+    main .content{
+        overflow-y: auto;
+        width: 100% !important;
+        height: 100%;
+        padding: 0;
+        margin-bottom: 10vh;
+    }
+    .content-center{
+        flex-direction: column;
+    }
+    main .content .box-content .content-value .content-center .center-layout{
+        width: 100%;
+    }
+    main .content .box-content .content-value .content-bottom{
+        flex-direction: column;
+    }
+    main .content .box-content .content-value .content-center .center-layout .icon {
+        font-size: 4rem;
+        margin: 55px 45px;
+    }
+    main .content .box-content .content-value .content-center .center-layout .value {
+        font-size: 1.8rem;
+    }
+
+    main .content .box-content .content-top{
+        border-radius: 0;
+    }
+    main .side-bar {
+    border-right: solid var(--grey) 1px;
+    padding: 20px 20px 20px 20px;
+    border-bottom: solid .8px var(--grey);
+    margin-bottom: 10px;
+    height: fit-content;
+}
+
+    main .side-bar .side-bar-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 80px;
+        height: auto;
+        justify-content: center;
+}
+main .side-content{
+    top: 20%;
+    position: absolute;
+    overflow-y: scroll;
+    height: 60%;
+    background-color: white;
+    display: none;
+}
+.content .form .form-value form .form-value .kinan{
+    width: 100%;
+}
+.content .form .form-value form .form-value{
+    flex-direction: column-reverse;
+    gap: 0;
+}
+.content{
+    overflow-y: scroll;
+    height: 80%;
+}
+}

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --green: #1A452C;
+    --light-green: #0B723A;
+    --grey: #bfbfbf;
+    --dark-grey: #8f8f8f;
+}
+
+#preload{
+    z-index: 20;
+    position: absolute;
+    width: 100vw;
+    background-color: white;
+    background-image: url('../img/preload.gif');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 10vh;
+    background-position: center center;
+    transition: ease-in-out 1s;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+}
+
+body {
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+/* header */
+/* Navigation bar */
+header {
+    border-bottom: solid var(--grey) 1px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 12px 50px;
+    max-width: 1250px;
+}
+
+/* Logo */
+header nav .logo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+header nav .logo img {
+    height: 60px;
+}
+
+header nav .logo h1 {
+    color: var(--green);
+    font-family: "DynaPuff", sans-serif;
+    font-weight: 500;
+    margin: 3px 0 0 8px;
+    font-size: 1.3rem;
+}
+
+/* Search Bar */
+
+header nav .search {
+    display: flex;
+    align-items: center;
+    width: 480px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: var(--grey);
+}
+
+header nav .search input {
+    color: white;
+    width: 100%;
+    border: none;
+    font-size: .8rem;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+header nav .search input:focus {
+    outline: none;
+}
+
+header nav .search input::placeholder {
+    color: white;
+}
+
+header nav .search i {
+    color: white;
+    margin: 15px;
+}
+
+/* account */
+header nav .account {
+    display: flex;
+    text-align: end;
+    align-items: center;
+    gap: 13px;
+    font-size: .8rem;
+    line-height: 1.4rem;
+}
+
+header nav .account .information p {
+    font-weight: 700;
+
+}
+
+header nav .account img {
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+/* main */
+main {
+    display: flex;
+    height: 80vh;
+}
+
+/* Menu Nav */
+main .side-bar {
+    border-right: solid var(--grey) 1px;
+    padding: 30px 20px 0 20px;
+    height: 100%;
+}
+
+main .side-bar .side-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    height: 100%;
+}
+
+main .side-bar .side-bar-container i {
+    font-size: 30px;
+    color: var(--dark-grey);
+
+}
+
+main .side-bar .side-bar-container i:hover {
+    color: var(--light-green);
+    transition: 0.5s;
+}
+
+.selected {
+    color: var(--light-green) !important;
+    /* Use this for selected pages */
+}
+
+/* Box content */
+main .content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+    padding: 20px 20px 20px 20px;
+}
+
+@media screen and (max-width : 600px) {
+    #preload{
+        background-size: 5vh;
+
+    }
+    header nav .logo img {
+        height: 40px;
+    }
+    header nav .logo h1{
+        font-size: .9rem;
+    }
+    main .content{
+        overflow-y: auto;
+    }
+    .information{
+        font-size: .7rem;
+    }
+    header nav{
+        padding: 12px 20px;
+    }
+
+}

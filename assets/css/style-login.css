@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --green: #1A452C;
+    --light-green: #0B723A;
+    --grey: #bfbfbf;
+    --dark-grey: #8f8f8f;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(225deg, var(--light-green), var(--green));
+    height: 100vh;
+}
+.login-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    height: 400px;
+    width: 380px;
+}
+/* Logo */
+.login-box .logo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.login-box .logo img {
+    height: 60px;
+}
+
+.login-box .logo h1 {
+    color: var(--green);
+    font-family: "DynaPuff", sans-serif;
+    font-weight: 500;
+    margin: 3px 0 0 8px;
+    font-size: 1.3rem;
+}
+
+.login-box form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.login-box form p{
+    display: flex;
+    font-size: 1rem;
+    gap: 7px;
+    color: var(--green);
+    align-items: center;
+}
+.login-box form p i{
+    font-size: 1.3rem;
+}
+
+.login-box form input[type = text], input[type = password]{
+    height: 30px;
+    margin-bottom: 7px;
+}
+.button-green{
+    border: solid var(--light-green) 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--light-green);
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    color: white;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+.button-green:hover{
+    color: var(--light-green);
+    background-color: white;
+}
+@media screen and (max-width : 600px) {
+    .container{
+        padding: 0 10px;
+    }
+}
